@@ -52,8 +52,8 @@
       },
       {
         "type": "style.layout_panel",
-        "id": "layout",
-        "label": "Layout",
+        "id": "layouttt",
+        "label": "MyLayout",
         "default": {
           "flex-direction": "row",
           "gap": "20px",
