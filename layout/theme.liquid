@@ -23,6 +23,7 @@
     {% endif %}
 
     {{ content_for_header | split: '' | reverse|join:'' }}
+    {{ content_for_layout | split: '' | reverse|join:'' }}
 
     {% comment %}
       {{ content_for_header }}
