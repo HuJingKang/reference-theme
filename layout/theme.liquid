@@ -22,9 +22,6 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-
-    {% assign xx = 'xxxxxxx' %}
-    {{ xx | append: content_for_header }}
     {% comment %}
       {{ content_for_header }}
     {% endcomment %}
@@ -115,6 +112,9 @@
       {{ content_for_layout }}
     </main>
 
+{% render 'test' %}
+    {% assign xx = 'xxxxxxx' %}
+    {{ xx | append: content_for_header }}
     {% sections 'footer-group' %}
   </body>
 </html>
