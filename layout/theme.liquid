@@ -23,7 +23,7 @@
     {% endif %}
 
     {% assign xx = 'xxxxxxx' %}
-    {{ content_for_header | append: xx }}
+    {{ xx | append: content_for_header }}
 
     {% comment %}
       {{ content_for_header }}
