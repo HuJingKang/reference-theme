@@ -22,12 +22,13 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
+    {% liquid
+      assign x = content_for_header
+      echo 1
+      echo 2
+    %}
 
-    {% increment 'a' %}
-    increment: {{ a }}
-    {{ content_for_header | append: a }}
-    {% increment 'a' %}
-    increment: {{ a }}
+    {{ content_for_header }}
     {% comment %}
       {{ content_for_header }}
     {% endcomment %}
