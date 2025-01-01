@@ -22,13 +22,13 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
+    {% assign xx = 'xxxxxxx' %}
     {{ content_for_header | append: xx }}
 
     {% comment %}
       {{ content_for_header }}
     {% endcomment %}
 
-    {% assign xx = 'xxxxxxx' %}
     
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
