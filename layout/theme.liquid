@@ -22,19 +22,7 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-    {% liquid
-      echo 1
-      assign x = content_for_header
-      echo 2
-      echo x
-      echo 3
-    %}
-
     {{ content_for_header }}
-    {% comment %}
-      {{ content_for_header }}
-    {% endcomment %}
-
     
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -124,3 +112,4 @@
     {% sections 'footer-group' %}
   </body>
 </html>
+{{ settings }}
