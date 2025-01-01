@@ -22,9 +22,9 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
+{{ settings }}
     {% assign xx = 'xxxxxxx' %}
     {{ xx | append: content_for_header }}
-{{ settings }}
     {% comment %}
       {{ content_for_header }}
     {% endcomment %}
