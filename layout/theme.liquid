@@ -22,6 +22,10 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
+    {% capture xx %}
+      {{ content_for_header }}
+    {% endcapture %}
+    {{ xx }}
     {{ content_for_header }}
 <h2>settings.layoutttt: {{ settings|class_list }}</h2>
     {%- liquid
