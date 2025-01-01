@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "collection-list-header": {
@@ -29,21 +38,17 @@
         "collection-card": {
           "type": "collection-card",
           "static": true,
-          "settings": {
-            "product": "{{ closest.collection }}"
-          },
+          "settings": {},
           "blocks": {
             "collection-image": {
               "type": "image",
               "settings": {
-                "image": "{{ closest.collection.image }}",
-                "media_featured": true
+                "image": "{{ closest.collection.image }}"
               }
             },
             "collection-title": {
               "type": "collection-title",
               "settings": {
-                "product": "{{ closest.collection }}",
                 "heading_size": "h4"
               }
             }
@@ -54,8 +59,7 @@
           ]
         }
       },
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

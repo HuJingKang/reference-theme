@@ -49,6 +49,22 @@
         "unit": "%",
         "label": "Font size scale",
         "default": 100
+      },
+      {
+        "type": "style.layout_panel",
+        "id": "layout",
+        "label": "Layout",
+        "default": {
+          "flex-direction": "row",
+          "gap": "20px",
+          "justify-content": "center",
+          "align-items": "flex-start",
+  
+          "@media (--mobile)": {
+            "flex-wrap": "wrap",
+            "gap": "10px"
+          }
+        }
       }
     ]
   },
