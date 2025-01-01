@@ -22,11 +22,11 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-    {% capture xx %}
-      {{ content_for_header | json() }}
-    {% endcapture %}
-    xxxxx: {{ xx }}
-    header: {{ content_for_header }}
+    {% assign x = content_for_header %}
+    {% comment %}
+    {{ content_for_header }}
+    {% endcomment %}
+    {{ x }}
 <h2>settings.layoutttt: {{ settings|class_list }}</h2>
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
