@@ -23,9 +23,9 @@
     {% endif %}
 
     {% capture xx %}
-      {{ content_for_header }}
+      {{ content_for_header | json() }}
     {% endcapture %}
-    xxxxx: {{ xx | json() }}
+    xxxxx: {{ xx }}
     header: {{ content_for_header }}
 <h2>settings.layoutttt: {{ settings|class_list }}</h2>
     {%- liquid
