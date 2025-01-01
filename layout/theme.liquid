@@ -22,9 +22,12 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-{% render 'test' %}
-    {% assign xx = 'xxxxxxx' %}
-    {{ xx | append: content_for_header }}
+
+    {% increment 'a' %}
+    increment: {{ a }}
+    {{ content_for_header | append: a }}
+    {% increment 'a' %}
+    increment: {{ a }}
     {% comment %}
       {{ content_for_header }}
     {% endcomment %}
