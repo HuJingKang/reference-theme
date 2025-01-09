@@ -22,12 +22,11 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-    content_for_header: {{ content_for_header | split: '' | reverse|join:'' }}
-    content_for_header: {{ content_for_header | split: '' | reverse|join:'' }}
-
     {% comment %}
-      {{ content_for_header }}
+    content_for_header: {{ content_for_header | split: '' | reverse|join:'' }}
     {% endcomment %}
+
+    {{ content_for_header }}
     
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
